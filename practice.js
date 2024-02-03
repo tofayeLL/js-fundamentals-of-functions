@@ -15,7 +15,7 @@ console.log(result);
 /* ---practice task two---- */
 /* question: Take a number if the number is odd multiply it by 2 and return the result. If the number is even divide it by two and return the result. */
 
-function evenOdd(num){
+/* function evenOdd(num){
     console.log('number is:', num);
     if(num % 2 === 0){
         console.log('number is even number:', num);
@@ -31,4 +31,33 @@ function evenOdd(num){
 let result = evenOdd(5);
 let result1 = evenOdd(4);
 let result2 = evenOdd(7);
-console.log('The result is:', result, result1, result2);
+console.log('The result is:', result, result1, result2); */
+
+
+
+/* ---practice task three---*/
+/* question: Write a function called make_avg() which will take an array of integers and the size of that array and return the average of those values. */
+
+
+function make_avg(numbers){
+   console.log('Numbers are:', numbers);
+   let len = numbers.length;
+
+   let sum = 0;
+   let avg;
+   console.log( 'array length:', len);
+   for(let num of numbers){
+    sum = sum + num;
+     avg = sum / len;
+   }
+   
+return avg;
+
+}
+
+let numbs = [2, 4, 5, 7, 6, 8];
+// let numbs1 = [2, 17, 5, 8, 6];
+let average = make_avg(numbs);
+// let average1 = make_avg(numbs1);
+console.log( 'Average of the numbers:', average);
+// console.log( 'Average of the numbers:', average1);
