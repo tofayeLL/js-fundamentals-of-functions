@@ -39,7 +39,7 @@ console.log('The result is:', result, result1, result2); */
 /* question: Write a function called make_avg() which will take an array of integers and the size of that array and return the average of those values. */
 
 
-function make_avg(numbers){
+/* function make_avg(numbers){
    console.log('Numbers are:', numbers);
    let len = numbers.length;
 
@@ -56,8 +56,42 @@ return avg;
 }
 
 let numbs = [2, 4, 5, 7, 6, 8];
-// let numbs1 = [2, 17, 5, 8, 6];
 let average = make_avg(numbs);
+console.log( 'Average of the numbers:', average); */
+
+
+
+// another array and numbers pass in the parameter
+// let numbs1 = [2, 17, 5, 8, 6];
 // let average1 = make_avg(numbs1);
-console.log( 'Average of the numbers:', average);
 // console.log( 'Average of the numbers:', average1);
+
+
+
+/* ---practice task four--- */
+/* question: Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string. */
+
+
+
+
+
+
+
+/* ----practice task five--- */
+/* question: Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd */
+
+function odd_even(num){
+    console.log('The number is:', num);
+   if(num % 2 === 0){
+    return 'even';
+   }
+   else{
+    return 'odd';
+   }
+
+}
+
+let result = odd_even(5);
+let result1 = odd_even(6);
+let result2 = odd_even(18);
+console.log(result, result1, result2);
