@@ -72,6 +72,24 @@ console.log( 'Average of the numbers:', average); */
 /* question: Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string. */
 
 
+function count_zero(str){
+    console.log( 'The string is:', str);
+    let count = 0;
+    let convertArray = str.split('');
+    for(let numbs of convertArray){
+      if(numbs === '0'){
+      count ++; 
+      }
+        
+    }
+    return count;
+}
+
+
+let str = '01010010';
+let result = count_zero(str);
+console.log('Number of zero in string:', result);
+
 
 
 
@@ -80,7 +98,7 @@ console.log( 'Average of the numbers:', average); */
 /* ----practice task five--- */
 /* question: Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd */
 
-function odd_even(num){
+/* function odd_even(num){
     console.log('The number is:', num);
    if(num % 2 === 0){
     return 'even';
@@ -94,4 +112,4 @@ function odd_even(num){
 let result = odd_even(5);
 let result1 = odd_even(6);
 let result2 = odd_even(18);
-console.log(result, result1, result2);
+console.log(result, result1, result2); */
