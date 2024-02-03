@@ -28,4 +28,7 @@ function sumOfNumbers(numbers){
 
 let numbs = [10, 12, 4, 8, 19, 2];
 let sum = sumOfNumbers(numbs);
+let elements = [1, 3, 5, 7, 10];
+let sum1 = sumOfNumbers(elements);
 console.log( 'sum of numbers:', sum);
+console.log('sum1 of numbers:', sum1);
